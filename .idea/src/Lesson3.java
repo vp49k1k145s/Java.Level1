@@ -1,3 +1,10 @@
+/**
+ * Java.Level1.Lesson3
+ * @autor Вадим, Дзюбенко
+ * @version 05,06,2019
+ */
+
+
 import java.util.Random;
 import java.util.Scanner;
 
