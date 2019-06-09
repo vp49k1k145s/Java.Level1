@@ -1,7 +1,7 @@
 /**
  * Java.Level1.Lesson1
  * @autor Вадим, Дзюбенко
- * @version 28,05,2019
+ * @version  DATE 28,05,2019
  */
 public class Lesson1{
     public static void main (String[] args){

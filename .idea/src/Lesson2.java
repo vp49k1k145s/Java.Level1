@@ -2,7 +2,7 @@
  * Java1.Level1.Lesson2
  *
  * @autor Dzyubenko  Vadim
- * @version 02, 06, 2019
+ * @version DATE 02,06,2019
  */
 
 import java.util.Arrays;
@@ -40,6 +40,7 @@ public class Lesson2 {
         }
         System.out.println(Arrays.toString(arr1));
     }
+
     public static void changeArray() {
         int[] w = {1, 5, 3, 2, 11, 4, 5, 2, 4, 8, 9, 1};
         for (int i = 0; i < w.length; i++) {
