@@ -100,18 +100,36 @@ class TicTacToe {
     }
 
     boolean checkWin(char dot) {
-        // check horizontals
-        if (map[0][0] == dot && map[1][0] == dot && map[2][0] == dot) return true;
-        if (map[0][1] == dot && map[1][1] == dot && map[2][1] == dot) return true;
-        if (map[0][2] == dot && map[1][2] == dot && map[2][2] == dot) return true;
-        // check verticals
-        if (map[0][0] == dot && map[0][1] == dot && map[0][2] == dot) return true;
-        if (map[1][0] == dot && map[1][1] == dot && map[1][2] == dot) return true;
-        if (map[2][0] == dot && map[2][1] == dot && map[2][2] == dot) return true;
-        // check diagonals
-        if (map[0][0] == dot && map[1][1] == dot && map[2][2] == dot) return true;
-        if (map[2][0] == dot && map[1][1] == dot && map[0][2] == dot) return true;
-        return false;
+        // check
+
+        boolean flagDia1 = true;
+        boolean flagDia2 = true;
+        for (int i = 0; i < SIZE; i++) {
+            boolean flagGor = true;
+            boolean flagFer = true;
+            for (int j = 0; j < SIZE; j++) {
+                if (map[j][i] != dot) {
+                    flagGor = false;
+
+                }
+                if (map[i][j] != dot) {
+                    flagFer = false;
+
+                }
+
+                if (map[i][i] != dot) {
+                    flagDia1 = false;
+                }
+
+                if (map[i][2 - i] != dot) {
+                    flagDia2 = false;
+                }
+            }
+            if (flagGor || flagFer) {
+                return true;
+            }
+        }
+        return flagDia1 || flagDia2;
     }
 
     boolean isCellValid(int x, int y) {
