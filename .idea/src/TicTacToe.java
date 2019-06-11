@@ -1,7 +1,7 @@
 /**
  * Java.Level1.Lesson4
  * @autor Вадим, Дзюбенко
- * @version DATE 09,06,2019
+ * @version DATE 10,06,2019
  */
 
 import java.util.*;
