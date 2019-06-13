@@ -1,7 +1,8 @@
 /**
  * Java.Level1.Lesson5
- * @autor Вадим, Дзюбенко
+ *
  * @version DATE 13,06,2019
+ * @autor Вадим, Дзюбенко
  */
 
 public class Employee {
@@ -14,7 +15,7 @@ public class Employee {
     private int salary;
     private int age;
 
-    Employee (String fullName, String position, String email, String phone, int salary, int age){
+    Employee(String fullName, String position, String email, String phone, int salary, int age) {
         this.fullName = fullName;
         this.position = position;
         this.email = email;
@@ -82,11 +83,12 @@ public class Employee {
                 ", возраст=" + age +
                 '}';
     }
-    public void print(){
+
+    public void print() {
         System.out.println(toString());
     }
 
-    public static void main(String[] args){
+    public static void main(String[] args) {
         Employee[] persArray = new Employee[5];
         persArray[0] = new Employee("Петров Роман Рованыч", "Генеральный директор", "vp@mail.ru", "89067958412", 250000, 55);
         persArray[1] = new Employee("Иванов Иван Иваныч", "Директор по развитию", "iii@mail.ru", "89068545443", 127000, 42);
@@ -95,7 +97,7 @@ public class Employee {
         persArray[4] = new Employee("Волкова Кристина Романовна", "Директор по работе с клиентами", "kvr@mail.ru", "89068545443", 138000, 48);
 
 
-        for (int i=0; i < persArray.length; i++){
+        for (int i = 0; i < persArray.length; i++) {
             if (persArray[i].age > 40) persArray[i].print();
 
         }
