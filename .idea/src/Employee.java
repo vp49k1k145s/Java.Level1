@@ -88,6 +88,8 @@ public class Employee {
         System.out.println(toString());
     }
 
+}
+class Lesson5{
     public static void main(String[] args) {
         Employee[] persArray = new Employee[5];
         persArray[0] = new Employee("Петров Роман Рованыч", "Генеральный директор", "vp@mail.ru", "89067958412", 250000, 55);
