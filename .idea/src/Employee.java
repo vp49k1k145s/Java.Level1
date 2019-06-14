@@ -75,12 +75,12 @@ public class Employee {
     @Override
     public String toString() {
         return "Employee{" +
-                "ФИО='" + fullName + '\'' +
-                ", Должность='" + position + '\'' +
-                ", email='" + email + '\'' +
-                ", телефон=" + phone +
-                ", зарплата=" + salary +
-                ", возраст=" + age +
+                "ФИО='" + this.fullName + '\'' +
+                ", Должность='" + this.position + '\'' +
+                ", email='" + this.email + '\'' +
+                ", телефон=" + this.phone +
+                ", зарплата=" + this.salary +
+                ", возраст=" + this.age +
                 '}';
     }
 
