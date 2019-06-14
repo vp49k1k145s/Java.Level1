@@ -98,7 +98,7 @@ public class Employee {
 
 
         for (int i = 0; i < persArray.length; i++) {
-            if (persArray[i].age > 40) persArray[i].print();
+            if (persArray[i].getAge() > 40) persArray[i].print();
 
         }
     }
