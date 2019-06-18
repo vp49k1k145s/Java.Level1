@@ -1,3 +1,9 @@
+/**
+ * Java.Level1.Lesson6
+ *
+ * @version DATE 17,06,2019
+ * @autor Вадим, Дзюбенко
+ */
 package lesson6;
 
 public class Animal {
