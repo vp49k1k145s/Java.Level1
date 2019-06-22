@@ -55,7 +55,7 @@ class Cat {
     }
 
     void eat(Plate plate) {
-        if (plate.getFood() >= appetite) {
+        if (plate.getFood() >= appetite && !isFull) {
             plate.decreaseFood(appetite);
             isFull = true;
         }
