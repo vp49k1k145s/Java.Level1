@@ -9,15 +9,16 @@ class J1Lesson7 {
         System.out.println("List of cats:");
         Cat[] x = {new Cat("Ben4", 7), new Cat("Ben5", 5), new Cat("Ben", 15), new Cat("Ben1", 15), new Cat("Ben2", 50), new Cat("Ben3", 100), new Cat("Ben6", 50)};
         Plate plate = new Plate(100);
-
-        for (Cat c : x) {
-            if (!c.isFull() && c.getAppetite() > plate.getFood()) {
-                plate.increaseFood(100);
-            }
-            c.eat(plate);
-            System.out.println(c);
-            System.out.println(plate);
+while (true) {
+    for (Cat c : x) {
+        if (!c.isFull() && c.getAppetite() > plate.getFood()) {
+            plate.increaseFood(100);
         }
+        c.eat(plate);
+        System.out.println(c);
+        System.out.println(plate);
+    }
+}
     }
 }
 
